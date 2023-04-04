@@ -63,9 +63,7 @@ namespace ClassLibrary1
             return dni;
         }
         private int CalcularEdad()
-        {
-            DateTime fechaNacimiento = GetFechaNacimiento();
-            DateTime fechaActual = DateTime.Now;
+        {                        
             int edad = DateTime.Today.AddTicks(-fechaNacimiento.Ticks).Year - 1;
             return edad;
         }
