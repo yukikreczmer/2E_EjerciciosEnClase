@@ -23,9 +23,9 @@
             return a + b;
         }
 
-        public static explicit operator int (Sumador sumador)
+        public static explicit operator int (Sumador sum1)
         {
-            return sumador.CantidadSumas;
+            return sum1.CantidadSumas;
         }
 
         public static long operator + (Sumador sum1, Sumador sum2)
